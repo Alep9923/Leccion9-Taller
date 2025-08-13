@@ -66,11 +66,5 @@ public class Ejercicio3 {
             default:
                 System.out.println("Ingrese correctamente la información solicitada");
         }
-
-
-
-
-
-
     }
 }
