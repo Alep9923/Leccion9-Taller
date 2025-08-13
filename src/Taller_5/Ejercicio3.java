@@ -61,6 +61,13 @@ public class Ejercicio3 {
                 for(int i = 0; i < horas; i++){
                     tarifaInicialBicileta += 500;
                 }
+
+                if (horasAcceso.isAfter(LocalTime.of(20,0))) {
+                    System.out.println("Su vehículo se encuentra incluido en el cargo nocturno por lo que se le cobrará \nun 20% sobre su tarifa");
+                    double recargoNocturno = tarifaInicialBicileta * (1 + 0.20);
+                    tarifaInicialBicileta = (int) + recargoNocturno;
+                }
+
                 System.out.println("Su pago final es de " + tarifaInicialBicileta);
                 break;
             default:
